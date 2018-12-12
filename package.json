@@ -1,0 +1,15 @@
+{
+  "name": "@lichingchester/test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "commit": "bin/commit.js",
+    "cli": "bin/cli.js"
+  },
+  "scripts": {
+    "cli": "cli"
+  },
+  "author": "",
+  "license": "MIT"
+}
