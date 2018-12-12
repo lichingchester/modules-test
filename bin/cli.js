@@ -1,9 +1,11 @@
 #! /usr/bin/env node
-console.log('test started');
-
 const chalk = require('chalk');
 const meow = require('meow');
-const cliProcess = require('./modules/cli-process');
+
+const log = console.log;
+
+log(chalk.blue('test started'));
+
 
 const cli = meow(
   chalk`
@@ -50,6 +52,4 @@ const cli = meow(
   }
 );
 
-console.log(cli);
-
-// cliProcess(cli.input, cli.flags);
+log(cli);

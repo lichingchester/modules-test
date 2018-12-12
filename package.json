@@ -11,5 +11,10 @@
     "cli": "cli"
   },
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "meow": "^5.0.0",
+    "path": "^0.12.7"
+  }
 }
