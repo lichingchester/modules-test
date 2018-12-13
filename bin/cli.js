@@ -1,11 +1,13 @@
 #! /usr/bin/env node
+'use strict';
+
+require('dotenv').load();
 const chalk = require('chalk');
 const meow = require('meow');
+const command = require('./command');
+// const log = require('./logger');
 
-const log = console.log;
-
-log(chalk.blue('test started'));
-
+// log.debugStatus('test started');
 
 const cli = meow(
   chalk`
@@ -52,4 +54,6 @@ const cli = meow(
   }
 );
 
-log(cli);
+command(cli.input, cli.flags);
+
+// log.debugStatus('test end');
